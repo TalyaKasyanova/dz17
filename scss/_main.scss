@@ -1,0 +1,145 @@
+@use "variables";
+
+.main-header {
+  padding: 23px 0px;
+  border-bottom: 1px solid #EFEEF3;
+}
+
+.logo-link {
+  font: $logo-font;
+  color: $text-color;
+  vertical-align: middle;
+  transition: 0.3s all cubic-bezier(.17, .67, .83, .67);
+  padding: 0 20px;
+
+  &:hover {
+    color: $accent-color;
+    border-radius: 0px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 16px 16px 52px #e0e0e0,
+      -16px -16px 52px #ffffff;
+  }
+
+  &:hover &__icon {
+    fill: $title-color;
+    stroke: $title-color;
+  }
+}
+
+.logo-link__icon {
+  fill: $accent-color;
+  stroke: $accent-color;
+  transition: 0.3s all cubic-bezier(.17, .67, .83, .67);
+}
+
+.servises-section {
+  padding: 100px 0px;
+}
+
+.main-title {
+  font-size: 16px;
+  line-height: 1.31;
+  color: $title-color;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+
+.exp-list-item {
+  padding: 40px;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s all cubic-bezier(.17, .67, .83, .67);
+
+  &:hover {
+    border-color: $accent-color;
+    box-shadow: 14px 14px 28px #e6e6e6,
+      -14px -14px 28px #ffffff;
+  }
+
+  &:hover svg {
+    border-color: $accent-color;
+    filter: grayscale(61%) sepia(4%) brightness(107%) hue-rotate(307deg) saturate(143%) contrast(97%);
+  }
+
+  &:hover &__link {
+    color: #007FFC;
+    text-shadow: 16px 9px 10px rgba(0, 127, 252, 0.32);
+  }
+
+  &__icon {
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+    padding: 14px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font: $title-font;
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font: $text-font;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    font: $a-font;
+    color: $accent-color;
+    transition: 0.3s all cubic-bezier(.17, .67, .83, .67);
+  }
+}
+
+.main-footer {
+  padding: 40px 0px;
+  background-color: $second-bg-color;
+}
+
+.footer-logo-link {
+  color: $main-bg-color;
+  font: $logo-font;
+  transition: 0.3s all cubic-bezier(.17, .67, .83, .67);
+
+  &:hover svg {
+    fill: $main-bg-color;
+    stroke: $main-bg-color;
+  }
+}
+
+.footer-nav-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  &-item {
+    background: #EFEEF3;
+    border-radius: 5px;
+    width: 38px;
+    height: 38px;
+    padding: 9px;
+
+    &__link {
+      transition: 0.5s all cubic-bezier(.17, .67, .83, .67);
+    }
+
+    &__link:hover {
+      fill: $accent-color;
+    }
+  }
+}
